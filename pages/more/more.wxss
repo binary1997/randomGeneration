@@ -1,0 +1,52 @@
+/* pages/more/more.wxss */
+.versionsViwe{
+    background: white;
+    padding: 30rpx;
+}
+.versionsTitle{
+  font-size: 45rpx;
+  font-weight: bold;
+}
+.versionsContent{
+  padding: 30rpx 0;
+  font-size: 30rpx;
+}
+
+
+.admireWhiteBorder{
+  background: #fff;
+    width: 42vw;
+    height: 42vw;
+    /* display: flex; */
+    margin: 5vh auto;
+    border-radius: 15rpx;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.admireWhiteBorder image{
+  width: 30vw;
+  height: 30vw;
+  /* margin: 8vw auto 0 auto; */
+  display: block;
+  margin: 0 auto;
+  padding: 3vw 0 0 0;
+}
+.admireText{
+  text-align: center;
+  font-size: 35rpx;
+  margin: 1vw 0;
+  font-weight: bold;
+}
+
+.admireButton{
+  position: absolute;
+  bottom: 50rpx;
+  right: 50rpx;
+}
+
+
+.feature{
+  background: #fff;
+  margin: 30rpx 0;
+  padding: 20rpx 30rpx;
+  font-size: 30rpx;
+}

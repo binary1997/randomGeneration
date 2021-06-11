@@ -1,0 +1,15 @@
+<view class="bg-white "  wx:if="{{imgList.length != 0}}">
+    <view class="grid col-2 margin-bottom text-center" >
+      <view class="" wx:for="{{imgList}}"  wx:key>
+        <image mode="aspectFill"  src="{{item.imageUrl}}" data-item="{{item}}" bindtap="ToImageDetails"></image>
+      </view>
+    </view>
+</view>
+
+<view class="bg-white "  wx:else>
+    <view class="grid col-2 margin-bottom text-center" >
+      <view class="bg-{{backgroundColor[index].name}} SkeletonScreen" wx:for="{{20}}"  wx:key></view>
+    </view>
+</view>
+
+<view class="cu-load bg-white {{!isLoad?'loading':'over'}}"></view>

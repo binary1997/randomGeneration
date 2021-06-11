@@ -1,0 +1,39 @@
+<!--pages/configurationRecord/configurationRecord.wxml-->
+
+<view class="cu-bar bg-white solid-bottom ">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text> 功能介绍
+  </view>
+</view>
+<view class="cu-list menu ">
+  <view class="cu-item">
+    <view class="content padding-tb-sm">
+      <view>
+        <text class=""></text>本页记录着当前功能的选项配置</view>
+      <view class="text-gray text-sm">
+        <text class="cuIcon-infofill margin-right-xs"></text> 只有在页面退出后才会保存配置在本页</view>
+    </view>
+
+  </view>
+</view>
+
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-blue "></text> 配置记录列表
+  </view>
+</view>
+<view class="cu-list menu ">
+  <view class="cu-item" wx:if="{{type=='randomNumber'}}" wx:for="{{randomNumberConfigurationRecord}}">
+    <view class="content padding-tb-sm">
+      <view>
+        <text class=""></text> 个数:{{item.number}},范围:{{item.min_scope}}~{{item.max_scope}},{{item.isSole?'唯一':'不唯一'}}</view>
+      <view class="text-gray text-sm">
+        <text class=""></text>{{item.time}}</view>
+    </view>
+    <view class="action">
+      <button class="cu-btn round bg-blue button-hover shadow" data-item="{{item}}" bindtap="usingConfiguration">使用此配置<text class="cuIcon-right  text-white   "></text></button>
+    </view>
+  </view>
+</view>
+
+

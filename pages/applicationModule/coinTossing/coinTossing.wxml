@@ -1,0 +1,19 @@
+<!--pages/applicationModule/coinTossing/coinTossing.wxml-->
+<view class="container">
+  <view>
+    <view class="coinView {{isStart}}" bindtap="startChange">
+      <view class="startText">{{result}}</view>
+      <view class="shape_one" style="{{orangeHeight}}"></view>
+      <view class="shape_two" style="{{blueHeight}}"></view>
+      
+    </view>
+   
+    <view class="pedestal ">
+      <view class="text-sm text-gray margin-bottom"><text class="cuIcon-infofill lg text-gray"></text>点击硬币开始掷硬币</view>
+      <button bindtap="resetChange" hidden="{{isStart}}" class="cu-btn round {{resetColor}} shadow lg ">点击切换正反面</button>
+    </view>
+  </view>
+</view>
+<view class="ad_blank">
+  <ad-custom unit-id="adunit-1a9df43ed1f588dd"></ad-custom>
+</view> 

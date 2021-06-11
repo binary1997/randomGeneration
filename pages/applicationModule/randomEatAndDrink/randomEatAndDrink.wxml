@@ -1,0 +1,14 @@
+<!--pages/applicationModule/randomEatAndDrink/randomEatAndDrink.wxml-->
+<view class="container">
+
+  <view class="loader">
+    <view  style="position: relative;z-index: 100;">
+      <view>吃点啥?</view>
+      <view>点击开始生成!</view>
+      <button class="cu-btn round">
+        吃
+      </button>
+    </view>
+
+  </view>
+</view>

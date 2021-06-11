@@ -1,0 +1,7 @@
+/* pages/breaksPage.wxss */
+.item_title{
+  float: left;
+}
+.item_button{
+  float: right;
+}

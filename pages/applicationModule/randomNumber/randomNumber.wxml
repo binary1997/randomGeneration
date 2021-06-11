@@ -1,0 +1,65 @@
+<view class="container" style="padding:100rpx;">
+  <view class="equipment" >
+    <view class="showWindow">
+      <view wx:if="{{resultArray.length == 0}}" class="showWindowContent" style="background: #4a4f52;">
+        <view class="screenMask"></view>
+      </view>
+      <view wx:else class="showWindowContent">
+        <view class="showWindowContentText">
+          <view wx:for="{{resultArray}}" wx:key="*this" class="numbers">
+            {{item}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="input">
+      <view class="upFunctionAreas">
+        <view class="numberInput">
+          <view class="numberChoices">
+            <view class="numberChoicesTitle">请选定结果个数</view>
+            <view class="numberChoicesButtonSet">
+              <button bindtap="numberChange" id="1"
+                class="cu-btn {{number == 1 ? 'bg-blue':'bg-white'}} shadow sm">01</button>
+              <button bindtap="numberChange" id="2"
+                class="cu-btn {{number == 2 ? 'bg-blue':'bg-white'}} bg-blue shadow sm">02</button>
+              <button bindtap="numberChange" id="5"
+                class="cu-btn {{number == 5 ? 'bg-blue':'bg-white'}} bg-blue shadow sm">05</button>
+              <button bindtap="numberChange" id="10"
+                class="cu-btn {{number == 10 ? 'bg-blue':'bg-white'}} bg-blue shadow sm">10</button>
+            </view>
+          </view>
+          <view class="numberChoices initem">
+            <view class="initem_text">随机数范围</view>
+            <view class="cu-form-group initem_input">
+              <view class="title">最小值：</view>
+              <input type="number" value="{{min_scope}}" bindinput="inputMinScope"></input>
+            </view>
+            <view class="cu-form-group initem_input">
+              <view class="title">最大值：</view>
+              <input type="number" value="{{max_scope}}" bindinput="inputMaxScope"></input>
+            </view>
+          </view>
+        </view>
+        <view wx:if="{{isSole}}" class="bigButton bg-blue" bindtap="isSoleChange" id="false">
+          <view class="bigButtonText">唯 一</view>
+        </view>
+        <view wx:else class="bigButton bg-white" bindtap="isSoleChange" id="ture">
+          <view class="bigButtonText">不 唯 一</view>
+        </view>
+      </view>
+      <view class="initem ButtonSet">
+        <button style="margin-right:10rpx;" class="cu-btn  bg-blue shadow  randomNumber_button"
+          bindtap="gettingRandomNumbers" hover-class="randomNumber_button_hover">生成</button>
+        <button class="cu-btn  bg-gray shadow Reset " bindtap="Reset">重置</button>
+      </view>
+
+    </view>
+  </view>
+
+
+
+</view>
+
+<view class="bg-white more shadow" bindtap="moreChange">
+  <text class="cuIcon-moreandroid lg text-gray "  ></text>
+</view>

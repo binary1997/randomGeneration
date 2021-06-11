@@ -1,0 +1,35 @@
+<!--pages/more/more.wxml-->
+<view>
+  <view class="versionsViwe">
+    <view class="versionsTitle" bindtap="ToWallpaperList">版本日志</view>
+    <view class="versionsContent">
+      <view>V1.7.0</view>
+      <view>新增闪动文字功能,请点击更多体验</view>
+    </view>
+
+    
+  </view>
+  
+  <!-- <view class="feature" bindtap="toBreaksPage">
+    更多功能
+  </view> -->
+  <!-- <view>
+    <view class="admireWhiteBorder" hidden="{{!isAdmireShow}}">
+      <image src="./../../assset/zhanshangma.png" show-menu-by-longpress="true" mode="aspectFit"></image>
+      <view class="admireText">感谢支持!</view>
+    </view>
+    <view class="admireButton">
+      <button class="cu-btn  icon  bg-blue lg  shadow " bindtap="isAdmireShow">
+        <text class="cuIcon-appreciate"></text>
+      </button>
+    </view>
+  </view> -->
+  
+</view>
+<view class="ad">
+  <ad unit-id="adunit-3f8e8c0ee4be1043" ad-type="video" ad-theme="white"></ad>
+</view>
+
+
+
+

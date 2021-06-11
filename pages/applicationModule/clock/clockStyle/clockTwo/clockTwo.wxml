@@ -1,0 +1,35 @@
+<!--pages/applicationModule/clock/clockStyle/clockOne/clockOne.wxml-->
+<view class="imgView">
+  <image src="{{imgdata.imageUrl}}" mode="aspectFill" ></image>
+</view>
+<view class="timeView " bindtap="setProcess">
+  <view class="{{textColor}} time">{{time}}</view>
+  <view class="{{textColor}}">{{day}}</view>
+</view>
+<view class="backButtonView radius shadow" wx:if="{{setShow}}">
+  <view class="bg-white backButton" bindtap="backEvent">返回</view>
+ 
+</view>
+<view class="setButtonView radius shadow" wx:if="{{setShow}}">
+
+  <view class="bg-white backButton" bindtap="queryChange">刷新</view>
+</view>
+
+<view class="colorButtonView radius shadow" wx:if="{{setShow}}">
+
+<view class="bg-white backButton" bindtap="colorChange">切换字体颜色</view>
+</view>
+
+
+<view class="modelBlack" wx:if="{{setModelShow}}">
+  <view class="modelView shadow">
+    <view class="close bg-blue" bindtap="setEvent">
+      <text class="cuIcon-close text-white"></text>
+    </view>
+    <view class="padding-xs optionView ">
+      <view class="option solid {{Clockstyle.id==0?'bg-blue':''}}" data-styleId= '0' bindtap='clockStyleSet'>黑底白字</view>
+      <view class="option solid {{Clockstyle.id==1?'bg-blue':''}}" data-styleId= '1' bindtap='clockStyleSet'>白底黑字</view>
+    </view>
+    
+  </view>
+</view>

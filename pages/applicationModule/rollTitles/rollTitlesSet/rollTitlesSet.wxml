@@ -1,0 +1,23 @@
+<view class="cu-form-group margin-top">
+  <view class="title">字幕内容</view>
+  <input placeholder="请输入你要滚动的内容" bindinput="contentChange"></input>
+</view>
+<view class="cu-form-group">
+  <view class="title">滚动速度</view>
+  <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+    <view class="picker">
+      {{picker[index]}}
+    </view>
+  </picker>
+</view>
+<view class="cu-form-group colorGroup">
+  <view class="title">字幕内容</view>
+ <view class="colorItemGroup">
+  <view wx:for="{{ColorList}}" data-item="{{item}}" class="colorItem {{colorSelection==item.color?'pitchOn':''}}" style=" background-color:{{item.color}};" bindtap="colorSelection"></view>
+ </view>
+</view>
+<view class="startBtn bg-white shadow {{isStart}}" bindtap="startChange">开始<text class="cuIcon-right lg "></text></view>
+
+<view class="ad">
+  <ad-custom unit-id="adunit-3c88b2d5ef2f2b6a"></ad-custom>
+</view>

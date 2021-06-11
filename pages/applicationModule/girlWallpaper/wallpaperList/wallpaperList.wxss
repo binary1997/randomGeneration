@@ -1,0 +1,10 @@
+/* pages/applicationModule/girlWallpaper/wallpaperList/wallpaperList.wxss */
+image{
+  height: 250rpx;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+}
+.SkeletonScreen{
+  height: 250rpx;
+}

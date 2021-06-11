@@ -1,0 +1,38 @@
+<!--pages/applicationModule/calculationTakeawayDiscount/calculationTakeawayDiscount.wxml-->
+<form>
+  <view class="cu-form-group margin-top">
+    <view class="title">订单优惠</view>
+    <input placeholder="如红包之类"  value="{{orderPreferential}}" bindinput="inputOrderPreferential" ></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">额外费用</view>
+    <input placeholder="如配送费之类"  value="{{extraCharges}}" bindinput="inputExtraCharges" ></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">商品金额</view>
+    <input placeholder="商品价格以','分割" value="{{sum}}" bindinput="inputSum"></input>
+  </view>
+</form>
+
+<view class="padding flex flex-direction">
+  <button class="cu-btn bg-blue lg" bindtap="startCalculation">开始计算</button>
+</view>
+
+<view class="cu-bar bg-white solid-bottom margin-top" wx:if="{{PriceArrty.length != 0}}">
+  <view class="action">
+    <text class="cuIcon-title text-orange " ></text> 优惠后商品金额列表
+  </view>
+</view>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}" wx:for="{{PriceArrty}}" >
+    <view class="content">
+      <text class="cuIcon-btn text-blue"></text>
+      <text class="text-grey">原价为{{item.originalCost}}的餐品,价格优惠后为{{item.amountPaid}}</text>
+    </view>
+  </view>
+  
+</view>
+
+<view class="margin-top">
+    <ad-custom unit-id="adunit-1a9df43ed1f588dd"></ad-custom>
+  </view>

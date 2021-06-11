@@ -1,0 +1,9 @@
+<!--pages/applicationModule/rollTitles/rollTitlesShow/rollTitlesShow.wxml-->
+<view class="text-white" style="height: 100vh;" bindtap="setProcess">
+  <view class="showText" style="width:{{textlength}}px; right:{{oneRight}}px;color:{{color}}">{{showText}}</view>
+  <!-- <view class="showText" style="width:{{textlength}}px;right:{{TwoRight}}px   ">{{showText}}</view>  -->
+</view>
+<view class="backButtonView radius shadow" wx:if="{{setShow}}">
+  <view class="bg-white backButton" bindtap="backEvent">返回</view>
+ 
+</view>

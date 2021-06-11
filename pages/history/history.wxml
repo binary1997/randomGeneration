@@ -1,0 +1,37 @@
+<!--pages/history/history.wxml-->
+<view>
+  
+  <view class="margin-top">
+    <view class="cu-card solid-top case " wx:for="{{history}}">
+    <view class="" wx:if="{{index == '2'}}">
+    <ad-custom unit-id="adunit-1a9df43ed1f588dd"></ad-custom>
+  </view> 
+    <view class="cu-item  shadow " style="border-radius: 0;margin:  0;">
+      <view class="cu-list menu-avatar">
+        <view class="cu-item" style="padding:0">
+          <view class="content flex-sub" style="width:100%;left:0;padding: 0 30rpx;">
+            <view class="text-grey">结果值:{{item.value}}</view>
+            <view class="text-gray text-sm flex justify-between">
+              功能名称:{{item.featuresName}}
+              <view class="text-gray text-sm">
+               {{item.time}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+   
+  </view>
+  </view>
+  <!-- <view class=" margin-top" wx:if="{{history.length != 0}}"><ad unit-id="adunit-3f8e8c0ee4be1043" ad-type="video"  ad-theme="white"></ad></view> -->
+  <view class=" padding-xs flex align-center" wx:if="{{history.length == 0}}">
+  
+    <view class="flex-sub text-center">
+      <view class=" text-xsl padding">
+        <text class=" cuIcon-warn  text-blue"></text>
+      </view>
+      <view class="padding">暂无历史记录,快去首页体验功能吧~</view>
+    </view>
+  </view>
+</view>

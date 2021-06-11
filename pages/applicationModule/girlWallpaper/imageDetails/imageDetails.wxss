@@ -1,0 +1,39 @@
+/* pages/applicationModule/girlWallpaper/imageDetails/imageDetails.wxss */
+
+image{
+  width: 100vw;
+}
+.imgView{
+  padding: 30rpx 0;
+}
+.imageSize{
+  position: fixed;
+  z-index: 1;
+  width: 310rpx;
+  background: white;
+  text-align: center;
+  padding: 10rpx 20rpx;
+  border-radius: 50px;
+  bottom: 70rpx;
+  left: 20rpx;
+}
+.downBtn{
+  position: fixed;
+  z-index: 1;
+  width: 200rpx;
+  background: white;
+  text-align: center;
+  padding: 10rpx 20rpx;
+  border-radius: 50px;
+  bottom: 70rpx;
+  right: 20rpx;
+}
+
+
+.downAd{
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  bottom: 200rpx;
+
+}

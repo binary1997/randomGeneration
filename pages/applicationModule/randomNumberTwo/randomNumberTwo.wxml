@@ -1,0 +1,26 @@
+<!--pages/applicationModule/randomNumberTwo/randomNumberTwo.wxml-->
+<view class="container" style="padding:50rpx 100rpx;">
+  <view class="equipment">
+    <view class="showWindow">
+      <view class="showWindowContent">
+        <view class="windowText">{{number}}</view>
+      </view>
+    </view>
+    <view class="input">
+      <view class="cu-form-group margin-top">
+        <view class="title">最小值</view>
+        <input type="number" value="{{minScope}}" bindinput="inputMinScope"></input>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">最大值</view>
+        <input type="number" value="{{maxScope}}" bindinput="inputMaxScope"></input>
+      </view>
+      <button wx:if="{{!isStart}}" class="cu-btn bg-blue lg shadow" bindtap="Start" style="width:100%;margin: 20rpx 0;">开始</button>
+      <button wx:else class="cu-btn bg-blue lg shadow" bindtap="Stop" style="width:100%;margin: 20rpx 0;">停止</button>
+      <button wx:if="{{!isStart}}" class="cu-btn bg-gray lg shadow" bindtap="Reset" style="width:100%;margin: 20rpx 0 0 0 ;">重置</button>
+    </view>
+  </view>
+</view>
+<view class="ad_blank">
+  <ad unit-id="adunit-f484d199a299c13a"></ad>
+</view>

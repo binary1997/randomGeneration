@@ -1,0 +1,136 @@
+<!--pages/breaksPage.wxml-->
+<view>
+  <view class="cu-bar bg-white solid-bottom ">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 更多功能
+    </view>
+
+  </view>
+  <view class="cu-list menu">
+    <view class="cu-item " bindtap="toFnPage">
+      <view class="content">
+        <text class="text-black">历史记录</text>
+      </view>
+      <view class="action">
+        <text class="cuIcon-right"></text>
+      </view>
+    </view>
+  </view>
+  <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 其他功能
+    </view>
+
+  </view>
+  <view class="cu-list menu">
+    <view class="cu-item " bindtap="toCalculationTakeawayDiscountPage">
+      <view class="content">
+        <text class="text-black">外卖优惠计算</text>
+      </view>
+      <view class="action">
+        <text class="cuIcon-right"></text>
+      </view>
+    </view>
+    <view class="cu-item " bindtap="toCounter">
+      <view class="content">
+        <text class="text-black">计数器</text>
+      </view>
+      <view class="action">
+        <text class="cuIcon-right"></text>
+      </view>
+    </view>
+    <view class="cu-item " bindtap="toGirlWallpaper">
+      <view class="content">
+        <text class="text-black">风景壁纸</text>
+      </view>
+      <view class="action">
+        <text class="cuIcon-right"></text>
+      </view>
+    </view>
+    <view class="cu-item " bindtap="toClock" bindlongpress="toGirlClock">
+      <view class="content">
+        <text class="text-black">全屏时钟</text>
+      </view>
+      <view class="action">
+        <text class="cuIcon-right"></text>
+      </view>
+    </view>
+    <view class="cu-item " bindtap="toRollTitlesSet" >
+      <view class="content">
+        <text class="text-black">LED滚动字幕</text>
+      </view>
+      <view class="action">
+        <text class="cuIcon-right"></text>
+      </view>
+    </view>
+    <view class="cu-item " bindtap="toTextSet" >
+      <view class="content">
+        <text class="text-black">闪动文字</text>
+      </view>
+      <view class="action">
+        <text class="cuIcon-right"></text>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text>外部功能
+    </view>
+
+  </view>
+  <view class="cu-list menu-avatar">
+    <view class="cu-item" id="inquire" bindtap="openMyMiniProgram">
+      <image class="cu-avatar round lg" src="./../../assset/inquire_icon.png"></image>
+      <view class="content" style="line-height: 20rpx;width:auto">
+        <view class="text-grey">查查盒子</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut" style="max-width: 550rpx;">
+            <text class=" margin-right-xs"></text>
+            提供:商品条码,手机归属地,垃圾分类,ip地址等信息查询服务。
+          </text>
+        </view>
+      </view>
+
+    </view>
+    <view class="cu-item" id="joke" bindtap="openMyMiniProgram">
+      <image class="cu-avatar round lg" src="./../../assset/joke.png"></image>
+      <view class="content" style="line-height: 20rpx;width:auto">
+        <view class="text-grey">笑话丨段子丨语录</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut" style="max-width: 550rpx;">
+            <text class=" margin-right-xs"></text>
+            提供:笑话大全,段子,语录等各种让你开心的小程序。
+          </text>
+        </view>
+      </view>
+
+    </view>
+  </view> -->
+
+  <view class="margin-top">
+    <ad-custom unit-id="adunit-1a9df43ed1f588dd"></ad-custom>
+  </view>
+
+  <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 优惠券列表
+    </view>
+
+  </view>
+  <view class="cu-list menu">
+    <view class="cu-item " wx:for="{{couponList}}">
+      <view class="content">
+        <text class="cuIcon-btn text-blue"></text>
+        <text class="text-grey">{{item.couponName}}-优惠券</text>
+      </view>
+      <view class="action">
+        <button id="{{item.name}}" class="cu-btn round bg-blue shadow" bindtap="openMiniProgram">
+          GO<text class="cuIcon-right"></text></button>
+      </view>
+    </view>
+
+
+  </view>
+</view>

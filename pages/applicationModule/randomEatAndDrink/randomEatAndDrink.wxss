@@ -1,0 +1,55 @@
+/* pages/applicationModule/randomEatAndDrink/randomEatAndDrink.wxss */
+.loader{
+  position: relative;
+width: 450rpx;
+height: 450rpx;
+border-radius: 50%;
+background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+
+}
+
+.start{
+  animation: animate 1.2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  top: 10rpx;
+  left: 10rpx;
+  right: 10rpx;
+  bottom: 10rpx;
+  background: white;
+  border: solid #f1f1f1 10rpx;
+  border-radius: 50%;
+  
+}
+.projection{
+  position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+background: linear-gradient(#f07e6e, #84cdfa, #5ad1cd);
+}
+
+
+/* .projection:nth-child(1) {
+  filter: blur(5rpx);
+}
+.projection:nth-child(2) {
+  filter: blur(10rpx);
+}
+.projection:nth-child(3) {
+  filter: blur(25rpx);
+}
+.projection:nth-child(4) {
+  filter: blur(50rpx);
+} */

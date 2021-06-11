@@ -1,0 +1,136 @@
+
+.equipment{
+  width: 85vw;
+  height: 80vh;
+  background: #fff;
+  border-radius: 15rpx;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+  z-index: 2;
+  position: relative;
+}
+.showWindow {
+  width: 70vw;
+  height: 15vh;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+  border-radius: 15rpx;
+  margin: 76rpx auto;
+}
+
+.showWindowContent {
+  width: 67vw;
+  height: 13vh;
+  background: #f1f1f1;
+  margin: auto;
+  border-radius: 15rpx;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  display: flex;
+}
+
+.windowText{
+  font-size: 50rpx;
+  margin: auto;
+  font-weight: bolder;
+  color: #929292;
+}
+
+.screenMask{
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
+    background: linear-gradient( 170deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.2) 55%, rgba(0,0,0,0.0) 56%, rgba(0,0,0,0.0) 100% );
+    border-color: rgba(255, 255, 255, 0.2);
+    border-image: none;
+    border-style: groove;
+    border-width: 3px;
+    border-bottom-width: 2px;
+    width: 67vw;
+    height: 13vh;
+    margin: auto;
+    border-radius: 15rpx;
+    display: flex;
+  
+}
+
+.input{
+  width: 70vw;
+  margin: 200rpx auto 0 auto;
+}
+.upFunctionAreas{
+  display: flex;
+}
+.numberChoices{
+  width: 90%;
+}
+.numberInput{
+  width: 70%;
+  
+}
+.bigButton{
+  width: 30%;
+    border-radius: 15rpx;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    display: flex;
+}
+.bigButtonText{
+  margin: auto;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.numberChoicesTitle{
+  color: #999;
+    margin-bottom: 10rpx;
+}
+.numberChoicesButtonSet{
+  display: flex;
+  justify-content: space-between;
+}
+.initem{
+  margin-top: 20rpx;
+}
+.initem_text{
+  color: #999;
+  margin-bottom: 10rpx;
+}
+.initem_input {
+  padding: 0;
+  min-height: auto;
+}
+.initem_input .title{
+  font-size: 29rpx;
+}
+.ButtonSet{
+  display: flex;
+  margin-top: 60rpx;
+  justify-content: space-between;
+}
+.randomNumber_button{
+  width: 63%;
+}
+.Reset{
+  width: 30%;
+}
+
+.showWindowContentText{
+  display: flex;
+  margin: auto;
+  font-size: 30rpx;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.numbers{
+  width: 20%;
+  padding: 20rpx;
+}
+.more{
+  position: fixed;
+  top: 150rpx;
+  padding: 30rpx 36rpx;
+  width: 65rpx;
+  height: 100rpx;
+  right: 3vw;
+  z-index: 1;
+  font-size: 40rpx;
+  border-radius: 5rpx;
+}

@@ -1,0 +1,17 @@
+<!--pages/applicationModule/girlWallpaper/imageDetails/imageDetails.wxml-->
+<view >
+  <view class="imgView">
+    <image mode="aspectFit" src="{{imgInfo.imageUrl}}" ></image>
+  </view>
+  <view class="downAd">
+    <ad-custom unit-id="adunit-1a9df43ed1f588dd"></ad-custom>
+  </view>
+  <view class="imageSize shadow shadow-lg" wx:if="{{imgInfo.imageSize !=''}}">
+    <view>图片尺寸:{{imgInfo.imageSize}}</view>
+  </view>
+  <view class="downBtn shadow shadow-lg">
+   
+    <text class="cuIcon-down" bindtap="saveWallpaper">下载原图</text>
+ 
+  </view>
+</view>

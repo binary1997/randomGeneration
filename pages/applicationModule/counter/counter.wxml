@@ -1,0 +1,41 @@
+<!--pages/applicationModule/counter/counter.wxml-->
+<view>
+  <view class="numberShow">{{number}}</view>
+  <view class="buttonSet">
+    <view class="text-block shadow  button bg-blue" bindtap="reduceNumber">减</view>
+    <view class=" button bg-white shadow " bindtap="setting"><text class="cuIcon-settings  lg text-block"></text></view>
+    <view class="text-block shadow button bg-blue" bindtap="addNumber">加</view>
+  </view>
+  <view class="resetbtn bg-white shadow" bindtap="reset">重 置</view>
+</view>
+
+<view class="ad">
+  <ad unit-id="adunit-f484d199a299c13a"></ad>
+</view>
+
+
+<view class="cu-modal {{settingShow?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="content">自定义参数</view>
+      <view class="action" bindtap="setting">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="">
+      <view class="cu-form-group margin-top">
+        <view class="title">计数开始:</view>
+        <input placeholder="" value="{{number}}" bindinput="inputNumber" type="number"></input>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">每次增加:</view>
+        <input placeholder="" value="{{add}}" bindinput="inputAdd" type="number"></input>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">每次减少:</view>
+        <input placeholder="" value="{{reduce}}" bindinput="inputReduce" type="number"></input>
+      </view>
+    </view>
+  </view>
+</view>
+

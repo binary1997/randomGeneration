@@ -1,0 +1,49 @@
+<!--pages/applicationModule/randomWords/randomWords.wxml-->
+<view class="container" style="padding:100rpx">
+  <view class="equipment">
+    <view class="showWindow">
+      <view class="showWindowContent">
+        <view class="windowText">{{number}}</view>
+      </view>
+    </view>
+    <view class="input">
+
+      <view class="text-gray" style="font-size: 25rpx;">
+        <text class="cuIcon-info lg text-gray"></text>
+        请先输入至少两个选项,在点击开始进行随机
+      </view>
+
+      <view class="cu-form-group ">
+
+        <input type="text" value="{{itemInput}}" bindinput="inputItem" placeholder="请输入选项,按空格隔开"></input>
+      </view>
+      <view class="cu-form-group itemStorage">
+
+        <view style="height: 30rpx;"></view>
+
+        <view class="item" wx:for="{{itemList}}" :key="{{item}}" data-index="{{index}}" bindtap="deleteItem">{{item}}
+          <text class="cuIcon-roundclose lg text-gray"></text>
+        </view>
+        <!-- <view class="item">测试测</view>
+        <view class="item">测试测试测</view>
+        <view class="item">测</view>
+        <view class="item">测试测试测试测</view>
+        <view class="item">测试</view>
+        <view class="item">测打算多测</view>
+        <view class="item">测测</view>
+        <view class="item">测试测</view> -->
+        <view style="clear: both;"></view>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">是否保存选项</view>
+        <switch class="blue sm" checked="{{isSave}}" bindchange="isSaveChange"></switch>
+      </view>
+      <button wx:if="{{!isStart}}" class="cu-btn bg-blue lg shadow" bindtap="Start"
+        style="width:100%;">开始</button>
+      <button wx:else class="cu-btn bg-blue lg shadow" bindtap="Stop"
+        style="width:100%;">停止</button>
+      <button wx:if="{{!isStart}}" class="cu-btn bg-gray lg shadow" bindtap="Reset"
+        style="width:100%;margin: 20rpx 0 0 0 ;">重置</button>
+    </view>
+  </view>
+</view>

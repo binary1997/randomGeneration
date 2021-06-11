@@ -1,0 +1,5 @@
+<view class="text" style="font-size:{{fontSize}}rpx" data-text="Lorem ipsum dolor"  bindtap="setProcess"> {{text}}</view>
+<view class="backButtonView radius shadow" wx:if="{{setShow}}">
+  <view wx:if="{{type=='back'}}" class="bg-white backButton" bindtap="backEvent">返回</view>
+  <view wx:if="{{type=='home'}}" class="bg-white backButton" bindtap="homeEvent">回到首页</view>
+</view>

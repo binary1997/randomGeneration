@@ -1,0 +1,79 @@
+/* pages/home/home.wxss */
+
+.fn_list {
+  padding: 20rpx 20rpx;
+}
+
+.fn {
+  display: flex;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.backImg {
+  width: 100vw;
+  height: 10vh;
+  border-radius: 10rpx;
+}
+
+
+.fn_title {
+
+  color: #fff;
+  margin-left: 25rpx;
+  font-size: 35rpx;
+  line-height: 10vh;
+  /* margin-top: 28rpx; */
+  font-weight: bold;
+  letter-spacing: 10rpx;
+}
+
+.headerBack {
+  width: 100vw;
+  height: 25vh;
+  position: static;
+}
+
+.Title {
+  color: #fff;
+  position: absolute;
+  top: 12vh;
+  width: 100vw;
+  font-size: 50rpx;
+  text-align: center;
+}
+
+.updateTip{
+  position: fixed;
+    top: 20vh;
+    right:  -400rpx;
+    width: 400rpx;
+    background: #fff;
+    padding: 5px 15rpx;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: all 2s;
+}
+.updateTipShow{
+  right: 0;
+}
+.updateTipJump{
+  position: fixed;
+    top: 20vh;
+    right: 0;
+    background: #fff;
+    width: 400rpx;
+    padding: 2px 0 2px 15rpx;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: all 2s;
+}
+.hidden{
+  right: -290rpx
+}
+.text-gray{
+  transition: all 2s;
+}

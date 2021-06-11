@@ -1,0 +1,38 @@
+<!--pages/home/home.wxml-->
+<view>
+  <image wx:if="{{results == ''}}" src="https://image.weilanwl.com/gif/loading-2.gif" mode="center"
+    class="headerBack gif-black "></image>
+  <image wx:else src="{{results}}" mode="aspectFit	" class="headerBack" bindlongpress="saveWallpaper"></image>
+  <view class="Title">功 能 列 表</view>
+</view>
+<view class="fn_list" style="height: {{fn_listHeight}}rpx;">
+  <view class="fn coolBlue " data-path="randomNumber" bindtap="toFnPage" style="animation-delay: 0.5s;">
+    <view class="fn_title">
+      随机数生成
+    </view>
+  </view>
+  <view class="fn blueRaspberry" data-path="randomNumberTwo" bindtap="toFnPage">
+    <view class="fn_title">
+      随机数生成(手动停止)
+    </view>
+  </view>
+  <view class="fn reef" data-path="randomWords" bindtap="toFnPage">
+    <view class="fn_title">
+      随机文字生成(手动停止)
+    </view>
+  </view>
+  <view class="fn scooter" data-path="coinTossing" bindtap="toFnPage">
+    <view class="fn_title">
+      掷硬币
+    </view>
+  </view>
+
+</view>
+<view class="ad">
+  <ad unit-id="adunit-f484d199a299c13a"></ad>
+</view>
+
+<view  class="updateTip text-gray {{tipShow}}" bindtap="toAboutPage">
+  <text wx:if="{{tipTextShow}}">跳转<text class="cuIcon-right lg text-gray"></text></text> <text wx:else>本次版本更新内容,点击查看</text>
+</view>
+<!-- <view  wx:if="{{tipShow == 'hidden'}}" class="updateTipJump text-gray"></view> -->

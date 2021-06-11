@@ -1,0 +1,40 @@
+/* pages/applicationModule/rollTitles/rollTitlesSet/rollTitlesSet.wxss */
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+
+
+.colorItem{
+  padding: 20rpx;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 40rpx;
+}
+.colorItem:first-child{
+  margin: 0 40rpx 0 0;
+}
+.colorItemGroup{
+ 
+  display: flex;
+}
+.colorGroup{
+  justify-content: end;
+}
+.pitchOn{
+ 
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.16);
+  transform: scale(1.2);
+}
+.startBtn{
+  margin: 30px auto;
+  width: 100px;
+  text-align: center;
+  border-radius: 50px;
+  padding:15rpx 35rpx;
+  font-size: 35rpx;
+  transition: all 1s;
+}
+.isStart{
+  background-color:lightskyblue;
+  color: #fff;
+}

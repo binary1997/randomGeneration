@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/applicationModule/flashingText/textSet/textSet",
+    "pages/applicationModule/flashingText/tiktokType/tiktokType",
+    "pages/applicationModule/calculationTakeawayDiscount/calculationTakeawayDiscount",
+    "pages/configurationRecord/configurationRecord",
+    "pages/more/more",
+    "pages/index/index",
+    "pages/history/history",
+    "pages/applicationModule/randomEatAndDrink/randomEatAndDrink",
+    "pages/applicationModule/randomNumber/randomNumber",
+    "pages/applicationModule/coinTossing/coinTossing",
+    "pages/applicationModule/randomNumberTwo/randomNumberTwo",
+    "pages/applicationModule/randomWords/randomWords",
+    "pages/breaksPage/breaksPage",
+    "pages/applicationModule/girlWallpaper/wallpaperList/wallpaperList",
+    "pages/applicationModule/girlWallpaper/imageDetails/imageDetails",
+    "pages/applicationModule/clock/clockStyle/clockOne/clockOne",
+    "pages/applicationModule/counter/counter",
+    "pages/applicationModule/rollTitles/rollTitlesShow/rollTitlesShow",
+    "pages/applicationModule/rollTitles/rollTitlesSet/rollTitlesSet",
+    "pages/applicationModule/clock/clockStyle/clockTwo/clockTwo"
+    
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#0081ff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "assset/fn.png",
+        "selectedIconPath": "assset/fn_blue.png",
+        "text": "功能"
+      },
+      {
+        "pagePath": "pages/breaksPage/breaksPage",
+        "iconPath": "assset/more.png",
+        "selectedIconPath": "assset/more_blue.png",
+        "text": "更多"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "assset/me.png",
+        "selectedIconPath": "assset/me_blue.png",
+        "text": "关于"
+      }
+    ]
+  }
+}
